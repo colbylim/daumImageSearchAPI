@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E53DD57FA9776B92025A446 /* Pods_daumImageSearchAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 666B7BC482EA8E4B581A0A59 /* Pods_daumImageSearchAPITests.framework */; };
+		56DA12DC546B1C7D04C3B788 /* Pods_daumImageSearchAPI_daumImageSearchAPIUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41C417AE232EE948D070A7B /* Pods_daumImageSearchAPI_daumImageSearchAPIUITests.framework */; };
+		7B4DEC31254E2D0900161D0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC30254E2D0900161D0C /* AppDelegate.swift */; };
+		7B4DEC33254E2D0900161D0C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC32254E2D0900161D0C /* SceneDelegate.swift */; };
+		7B4DEC35254E2D0900161D0C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC34254E2D0900161D0C /* SearchViewController.swift */; };
+		7B4DEC38254E2D0900161D0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4DEC36254E2D0900161D0C /* Main.storyboard */; };
+		7B4DEC3A254E2D0B00161D0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4DEC39254E2D0B00161D0C /* Assets.xcassets */; };
+		7B4DEC3D254E2D0B00161D0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B4DEC3B254E2D0B00161D0C /* LaunchScreen.storyboard */; };
+		7B4DEC48254E2D0B00161D0C /* daumImageSearchAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC47254E2D0B00161D0C /* daumImageSearchAPITests.swift */; };
+		7B4DEC53254E2D0B00161D0C /* daumImageSearchAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC52254E2D0B00161D0C /* daumImageSearchAPIUITests.swift */; };
+		7B4DEC83254E2EE900161D0C /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC82254E2EE900161D0C /* ViewModelProtocol.swift */; };
+		7B4DEC88254E2EFE00161D0C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC87254E2EFE00161D0C /* SearchViewModel.swift */; };
+		7B4DEC8D254E2F2300161D0C /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC8C254E2F2300161D0C /* SearchCollectionViewCell.swift */; };
+		7B4DEC92254E2F4B00161D0C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC91254E2F4B00161D0C /* DetailViewController.swift */; };
+		7B4DEC98254E300400161D0C /* APIProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC97254E300400161D0C /* APIProtocols.swift */; };
+		7B4DECA0254E302000161D0C /* APIManagerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DEC9F254E302000161D0C /* APIManagerAdapter.swift */; };
+		7B4DECA5254E303A00161D0C /* APIManagerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DECA4254E303A00161D0C /* APIManagerUtil.swift */; };
+		7B4DECAA254E305D00161D0C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DECA9254E305D00161D0C /* APIManager.swift */; };
+		7B4DECB0254E30D100161D0C /* KakaoImageSearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DECAF254E30D100161D0C /* KakaoImageSearchAPI.swift */; };
+		7B4DECB9254E311400161D0C /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DECB8254E311400161D0C /* Document.swift */; };
+		7B4DECBE254E312400161D0C /* Mata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DECBD254E312400161D0C /* Mata.swift */; };
+		7B4DECC3254E313500161D0C /* KakaoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DECC2254E313500161D0C /* KakaoData.swift */; };
+		7B4DECC9254E315D00161D0C /* Extension+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DECC8254E315D00161D0C /* Extension+Error.swift */; };
+		7B4DECD1254E319600161D0C /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DECD0254E319600161D0C /* Extension+UIImageView.swift */; };
+		B6CA685DB83A402C005F39B6 /* Pods_daumImageSearchAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82CCAD26A37ED284C5BF155E /* Pods_daumImageSearchAPI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7B4DEC44254E2D0B00161D0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B4DEC25254E2D0900161D0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B4DEC2C254E2D0900161D0C;
+			remoteInfo = daumImageSearchAPI;
+		};
+		7B4DEC4F254E2D0B00161D0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7B4DEC25254E2D0900161D0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B4DEC2C254E2D0900161D0C;
+			remoteInfo = daumImageSearchAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		34296122FD584C36BB85A59E /* Pods-daumImageSearchAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daumImageSearchAPI.debug.xcconfig"; path = "Target Support Files/Pods-daumImageSearchAPI/Pods-daumImageSearchAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		3E6BA983BBDD897CB1EB3BB6 /* Pods-daumImageSearchAPI-daumImageSearchAPIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daumImageSearchAPI-daumImageSearchAPIUITests.debug.xcconfig"; path = "Target Support Files/Pods-daumImageSearchAPI-daumImageSearchAPIUITests/Pods-daumImageSearchAPI-daumImageSearchAPIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		666B7BC482EA8E4B581A0A59 /* Pods_daumImageSearchAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_daumImageSearchAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4DEC2D254E2D0900161D0C /* daumImageSearchAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daumImageSearchAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4DEC30254E2D0900161D0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7B4DEC32254E2D0900161D0C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7B4DEC34254E2D0900161D0C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		7B4DEC37254E2D0900161D0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7B4DEC39254E2D0B00161D0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B4DEC3C254E2D0B00161D0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7B4DEC3E254E2D0B00161D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4DEC43254E2D0B00161D0C /* daumImageSearchAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = daumImageSearchAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4DEC47254E2D0B00161D0C /* daumImageSearchAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daumImageSearchAPITests.swift; sourceTree = "<group>"; };
+		7B4DEC49254E2D0B00161D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4DEC4E254E2D0B00161D0C /* daumImageSearchAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = daumImageSearchAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4DEC52254E2D0B00161D0C /* daumImageSearchAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = daumImageSearchAPIUITests.swift; sourceTree = "<group>"; };
+		7B4DEC54254E2D0B00161D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4DEC82254E2EE900161D0C /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
+		7B4DEC87254E2EFE00161D0C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		7B4DEC8C254E2F2300161D0C /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		7B4DEC91254E2F4B00161D0C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7B4DEC97254E300400161D0C /* APIProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocols.swift; sourceTree = "<group>"; };
+		7B4DEC9F254E302000161D0C /* APIManagerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerAdapter.swift; sourceTree = "<group>"; };
+		7B4DECA4254E303A00161D0C /* APIManagerUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerUtil.swift; sourceTree = "<group>"; };
+		7B4DECA9254E305D00161D0C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		7B4DECAF254E30D100161D0C /* KakaoImageSearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoImageSearchAPI.swift; sourceTree = "<group>"; };
+		7B4DECB8254E311400161D0C /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		7B4DECBD254E312400161D0C /* Mata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mata.swift; sourceTree = "<group>"; };
+		7B4DECC2254E313500161D0C /* KakaoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoData.swift; sourceTree = "<group>"; };
+		7B4DECC8254E315D00161D0C /* Extension+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Error.swift"; sourceTree = "<group>"; };
+		7B4DECD0254E319600161D0C /* Extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		82CCAD26A37ED284C5BF155E /* Pods_daumImageSearchAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_daumImageSearchAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D9E4E6A14E4B0A203888DB5 /* Pods-daumImageSearchAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daumImageSearchAPITests.release.xcconfig"; path = "Target Support Files/Pods-daumImageSearchAPITests/Pods-daumImageSearchAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		95DB53B40D593738FBC035B8 /* Pods-daumImageSearchAPI-daumImageSearchAPIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daumImageSearchAPI-daumImageSearchAPIUITests.release.xcconfig"; path = "Target Support Files/Pods-daumImageSearchAPI-daumImageSearchAPIUITests/Pods-daumImageSearchAPI-daumImageSearchAPIUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A41C417AE232EE948D070A7B /* Pods_daumImageSearchAPI_daumImageSearchAPIUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_daumImageSearchAPI_daumImageSearchAPIUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78E0AD932CEF9A21A4630B9 /* Pods-daumImageSearchAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daumImageSearchAPI.release.xcconfig"; path = "Target Support Files/Pods-daumImageSearchAPI/Pods-daumImageSearchAPI.release.xcconfig"; sourceTree = "<group>"; };
+		DB5FEAD6507D13246AD2BB55 /* Pods-daumImageSearchAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-daumImageSearchAPITests.debug.xcconfig"; path = "Target Support Files/Pods-daumImageSearchAPITests/Pods-daumImageSearchAPITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B4DEC2A254E2D0900161D0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6CA685DB83A402C005F39B6 /* Pods_daumImageSearchAPI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4DEC40254E2D0B00161D0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E53DD57FA9776B92025A446 /* Pods_daumImageSearchAPITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4DEC4B254E2D0B00161D0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56DA12DC546B1C7D04C3B788 /* Pods_daumImageSearchAPI_daumImageSearchAPIUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5AA3D08B4299AF190167AE39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82CCAD26A37ED284C5BF155E /* Pods_daumImageSearchAPI.framework */,
+				A41C417AE232EE948D070A7B /* Pods_daumImageSearchAPI_daumImageSearchAPIUITests.framework */,
+				666B7BC482EA8E4B581A0A59 /* Pods_daumImageSearchAPITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B4DEC24254E2D0900161D0C = {
+			isa = PBXGroup;
+			children = (
+				7B4DEC2F254E2D0900161D0C /* daumImageSearchAPI */,
+				7B4DEC46254E2D0B00161D0C /* daumImageSearchAPITests */,
+				7B4DEC51254E2D0B00161D0C /* daumImageSearchAPIUITests */,
+				7B4DEC2E254E2D0900161D0C /* Products */,
+				82BAC86674E221961191A3DE /* Pods */,
+				5AA3D08B4299AF190167AE39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7B4DEC2E254E2D0900161D0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DEC2D254E2D0900161D0C /* daumImageSearchAPI.app */,
+				7B4DEC43254E2D0B00161D0C /* daumImageSearchAPITests.xctest */,
+				7B4DEC4E254E2D0B00161D0C /* daumImageSearchAPIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B4DEC2F254E2D0900161D0C /* daumImageSearchAPI */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DEC96254E2FE900161D0C /* Networking */,
+				7B4DECB7254E30DE00161D0C /* Models */,
+				7B4DEC81254E2ED100161D0C /* ViewModels */,
+				7B4DEC70254E2E6A00161D0C /* UIs */,
+				7B4DECC7254E314F00161D0C /* Extensions */,
+				7B4DEC30254E2D0900161D0C /* AppDelegate.swift */,
+				7B4DEC32254E2D0900161D0C /* SceneDelegate.swift */,
+				7B4DEC39254E2D0B00161D0C /* Assets.xcassets */,
+				7B4DEC3B254E2D0B00161D0C /* LaunchScreen.storyboard */,
+				7B4DEC3E254E2D0B00161D0C /* Info.plist */,
+			);
+			path = daumImageSearchAPI;
+			sourceTree = "<group>";
+		};
+		7B4DEC46254E2D0B00161D0C /* daumImageSearchAPITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DEC47254E2D0B00161D0C /* daumImageSearchAPITests.swift */,
+				7B4DEC49254E2D0B00161D0C /* Info.plist */,
+			);
+			path = daumImageSearchAPITests;
+			sourceTree = "<group>";
+		};
+		7B4DEC51254E2D0B00161D0C /* daumImageSearchAPIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DEC52254E2D0B00161D0C /* daumImageSearchAPIUITests.swift */,
+				7B4DEC54254E2D0B00161D0C /* Info.plist */,
+			);
+			path = daumImageSearchAPIUITests;
+			sourceTree = "<group>";
+		};
+		7B4DEC70254E2E6A00161D0C /* UIs */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DEC34254E2D0900161D0C /* SearchViewController.swift */,
+				7B4DEC8C254E2F2300161D0C /* SearchCollectionViewCell.swift */,
+				7B4DEC91254E2F4B00161D0C /* DetailViewController.swift */,
+				7B4DEC36254E2D0900161D0C /* Main.storyboard */,
+			);
+			path = UIs;
+			sourceTree = "<group>";
+		};
+		7B4DEC81254E2ED100161D0C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DEC82254E2EE900161D0C /* ViewModelProtocol.swift */,
+				7B4DEC87254E2EFE00161D0C /* SearchViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7B4DEC96254E2FE900161D0C /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DECAE254E30B800161D0C /* RESTAPIs */,
+				7B4DEC97254E300400161D0C /* APIProtocols.swift */,
+				7B4DEC9F254E302000161D0C /* APIManagerAdapter.swift */,
+				7B4DECA4254E303A00161D0C /* APIManagerUtil.swift */,
+				7B4DECA9254E305D00161D0C /* APIManager.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7B4DECAE254E30B800161D0C /* RESTAPIs */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DECAF254E30D100161D0C /* KakaoImageSearchAPI.swift */,
+			);
+			path = RESTAPIs;
+			sourceTree = "<group>";
+		};
+		7B4DECB7254E30DE00161D0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DECB8254E311400161D0C /* Document.swift */,
+				7B4DECBD254E312400161D0C /* Mata.swift */,
+				7B4DECC2254E313500161D0C /* KakaoData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7B4DECC7254E314F00161D0C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7B4DECC8254E315D00161D0C /* Extension+Error.swift */,
+				7B4DECD0254E319600161D0C /* Extension+UIImageView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		82BAC86674E221961191A3DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34296122FD584C36BB85A59E /* Pods-daumImageSearchAPI.debug.xcconfig */,
+				D78E0AD932CEF9A21A4630B9 /* Pods-daumImageSearchAPI.release.xcconfig */,
+				3E6BA983BBDD897CB1EB3BB6 /* Pods-daumImageSearchAPI-daumImageSearchAPIUITests.debug.xcconfig */,
+				95DB53B40D593738FBC035B8 /* Pods-daumImageSearchAPI-daumImageSearchAPIUITests.release.xcconfig */,
+				DB5FEAD6507D13246AD2BB55 /* Pods-daumImageSearchAPITests.debug.xcconfig */,
+				8D9E4E6A14E4B0A203888DB5 /* Pods-daumImageSearchAPITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B4DEC2C254E2D0900161D0C /* daumImageSearchAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4DEC57254E2D0B00161D0C /* Build configuration list for PBXNativeTarget "daumImageSearchAPI" */;
+			buildPhases = (
+				CB0510765970B22ACB19517F /* [CP] Check Pods Manifest.lock */,
+				7B4DEC29254E2D0900161D0C /* Sources */,
+				7B4DEC2A254E2D0900161D0C /* Frameworks */,
+				7B4DEC2B254E2D0900161D0C /* Resources */,
+				4B8CBD61F6311EAA5B9A0AE1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = daumImageSearchAPI;
+			productName = daumImageSearchAPI;
+			productReference = 7B4DEC2D254E2D0900161D0C /* daumImageSearchAPI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7B4DEC42254E2D0B00161D0C /* daumImageSearchAPITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4DEC5A254E2D0B00161D0C /* Build configuration list for PBXNativeTarget "daumImageSearchAPITests" */;
+			buildPhases = (
+				702B4855BDA7E65397279240 /* [CP] Check Pods Manifest.lock */,
+				7B4DEC3F254E2D0B00161D0C /* Sources */,
+				7B4DEC40254E2D0B00161D0C /* Frameworks */,
+				7B4DEC41254E2D0B00161D0C /* Resources */,
+				69492C25556E012D0F9F4BFE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B4DEC45254E2D0B00161D0C /* PBXTargetDependency */,
+			);
+			name = daumImageSearchAPITests;
+			productName = daumImageSearchAPITests;
+			productReference = 7B4DEC43254E2D0B00161D0C /* daumImageSearchAPITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B4DEC4D254E2D0B00161D0C /* daumImageSearchAPIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4DEC5D254E2D0B00161D0C /* Build configuration list for PBXNativeTarget "daumImageSearchAPIUITests" */;
+			buildPhases = (
+				7A7B2C4B07890F9F2958DEEB /* [CP] Check Pods Manifest.lock */,
+				7B4DEC4A254E2D0B00161D0C /* Sources */,
+				7B4DEC4B254E2D0B00161D0C /* Frameworks */,
+				7B4DEC4C254E2D0B00161D0C /* Resources */,
+				9ACFD0ECC3ED04816461D0A2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B4DEC50254E2D0B00161D0C /* PBXTargetDependency */,
+			);
+			name = daumImageSearchAPIUITests;
+			productName = daumImageSearchAPIUITests;
+			productReference = 7B4DEC4E254E2D0B00161D0C /* daumImageSearchAPIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B4DEC25254E2D0900161D0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7B4DEC2C254E2D0900161D0C = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					7B4DEC42254E2D0B00161D0C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 7B4DEC2C254E2D0900161D0C;
+					};
+					7B4DEC4D254E2D0B00161D0C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 7B4DEC2C254E2D0900161D0C;
+					};
+				};
+			};
+			buildConfigurationList = 7B4DEC28254E2D0900161D0C /* Build configuration list for PBXProject "daumImageSearchAPI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7B4DEC24254E2D0900161D0C;
+			productRefGroup = 7B4DEC2E254E2D0900161D0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B4DEC2C254E2D0900161D0C /* daumImageSearchAPI */,
+				7B4DEC42254E2D0B00161D0C /* daumImageSearchAPITests */,
+				7B4DEC4D254E2D0B00161D0C /* daumImageSearchAPIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7B4DEC2B254E2D0900161D0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4DEC3D254E2D0B00161D0C /* LaunchScreen.storyboard in Resources */,
+				7B4DEC3A254E2D0B00161D0C /* Assets.xcassets in Resources */,
+				7B4DEC38254E2D0900161D0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4DEC41254E2D0B00161D0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4DEC4C254E2D0B00161D0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B8CBD61F6311EAA5B9A0AE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-daumImageSearchAPI/Pods-daumImageSearchAPI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-daumImageSearchAPI/Pods-daumImageSearchAPI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-daumImageSearchAPI/Pods-daumImageSearchAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69492C25556E012D0F9F4BFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-daumImageSearchAPITests/Pods-daumImageSearchAPITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-daumImageSearchAPITests/Pods-daumImageSearchAPITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-daumImageSearchAPITests/Pods-daumImageSearchAPITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		702B4855BDA7E65397279240 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-daumImageSearchAPITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A7B2C4B07890F9F2958DEEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-daumImageSearchAPI-daumImageSearchAPIUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ACFD0ECC3ED04816461D0A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-daumImageSearchAPI-daumImageSearchAPIUITests/Pods-daumImageSearchAPI-daumImageSearchAPIUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-daumImageSearchAPI-daumImageSearchAPIUITests/Pods-daumImageSearchAPI-daumImageSearchAPIUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-daumImageSearchAPI-daumImageSearchAPIUITests/Pods-daumImageSearchAPI-daumImageSearchAPIUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB0510765970B22ACB19517F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-daumImageSearchAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B4DEC29254E2D0900161D0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4DECA5254E303A00161D0C /* APIManagerUtil.swift in Sources */,
+				7B4DECD1254E319600161D0C /* Extension+UIImageView.swift in Sources */,
+				7B4DECC3254E313500161D0C /* KakaoData.swift in Sources */,
+				7B4DECC9254E315D00161D0C /* Extension+Error.swift in Sources */,
+				7B4DEC83254E2EE900161D0C /* ViewModelProtocol.swift in Sources */,
+				7B4DEC88254E2EFE00161D0C /* SearchViewModel.swift in Sources */,
+				7B4DEC8D254E2F2300161D0C /* SearchCollectionViewCell.swift in Sources */,
+				7B4DECAA254E305D00161D0C /* APIManager.swift in Sources */,
+				7B4DEC35254E2D0900161D0C /* SearchViewController.swift in Sources */,
+				7B4DEC98254E300400161D0C /* APIProtocols.swift in Sources */,
+				7B4DECA0254E302000161D0C /* APIManagerAdapter.swift in Sources */,
+				7B4DEC31254E2D0900161D0C /* AppDelegate.swift in Sources */,
+				7B4DECB9254E311400161D0C /* Document.swift in Sources */,
+				7B4DECBE254E312400161D0C /* Mata.swift in Sources */,
+				7B4DEC33254E2D0900161D0C /* SceneDelegate.swift in Sources */,
+				7B4DECB0254E30D100161D0C /* KakaoImageSearchAPI.swift in Sources */,
+				7B4DEC92254E2F4B00161D0C /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4DEC3F254E2D0B00161D0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4DEC48254E2D0B00161D0C /* daumImageSearchAPITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4DEC4A254E2D0B00161D0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4DEC53254E2D0B00161D0C /* daumImageSearchAPIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7B4DEC45254E2D0B00161D0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B4DEC2C254E2D0900161D0C /* daumImageSearchAPI */;
+			targetProxy = 7B4DEC44254E2D0B00161D0C /* PBXContainerItemProxy */;
+		};
+		7B4DEC50254E2D0B00161D0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B4DEC2C254E2D0900161D0C /* daumImageSearchAPI */;
+			targetProxy = 7B4DEC4F254E2D0B00161D0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7B4DEC36254E2D0900161D0C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B4DEC37254E2D0900161D0C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7B4DEC3B254E2D0B00161D0C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B4DEC3C254E2D0B00161D0C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7B4DEC55254E2D0B00161D0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7B4DEC56254E2D0B00161D0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7B4DEC58254E2D0B00161D0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34296122FD584C36BB85A59E /* Pods-daumImageSearchAPI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = daumImageSearchAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.daumImageSearchAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B4DEC59254E2D0B00161D0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78E0AD932CEF9A21A4630B9 /* Pods-daumImageSearchAPI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = daumImageSearchAPI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.daumImageSearchAPI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7B4DEC5B254E2D0B00161D0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB5FEAD6507D13246AD2BB55 /* Pods-daumImageSearchAPITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = daumImageSearchAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.daumImageSearchAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/daumImageSearchAPI.app/daumImageSearchAPI";
+			};
+			name = Debug;
+		};
+		7B4DEC5C254E2D0B00161D0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D9E4E6A14E4B0A203888DB5 /* Pods-daumImageSearchAPITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = daumImageSearchAPITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.daumImageSearchAPITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/daumImageSearchAPI.app/daumImageSearchAPI";
+			};
+			name = Release;
+		};
+		7B4DEC5E254E2D0B00161D0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E6BA983BBDD897CB1EB3BB6 /* Pods-daumImageSearchAPI-daumImageSearchAPIUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = daumImageSearchAPIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.daumImageSearchAPIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = daumImageSearchAPI;
+			};
+			name = Debug;
+		};
+		7B4DEC5F254E2D0B00161D0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95DB53B40D593738FBC035B8 /* Pods-daumImageSearchAPI-daumImageSearchAPIUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = daumImageSearchAPIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.daumImageSearchAPIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = daumImageSearchAPI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B4DEC28254E2D0900161D0C /* Build configuration list for PBXProject "daumImageSearchAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4DEC55254E2D0B00161D0C /* Debug */,
+				7B4DEC56254E2D0B00161D0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4DEC57254E2D0B00161D0C /* Build configuration list for PBXNativeTarget "daumImageSearchAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4DEC58254E2D0B00161D0C /* Debug */,
+				7B4DEC59254E2D0B00161D0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4DEC5A254E2D0B00161D0C /* Build configuration list for PBXNativeTarget "daumImageSearchAPITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4DEC5B254E2D0B00161D0C /* Debug */,
+				7B4DEC5C254E2D0B00161D0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4DEC5D254E2D0B00161D0C /* Build configuration list for PBXNativeTarget "daumImageSearchAPIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4DEC5E254E2D0B00161D0C /* Debug */,
+				7B4DEC5F254E2D0B00161D0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B4DEC25254E2D0900161D0C /* Project object */;
+}
